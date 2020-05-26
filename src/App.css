@@ -1,0 +1,13 @@
+.App {
+  width: 90%;
+  margin: auto;
+}
+.links-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.links-container li {
+  list-style-type: none;
+  margin: 10px 25px;
+}
