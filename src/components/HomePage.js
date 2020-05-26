@@ -4,7 +4,7 @@ import "./common.css";
 function HomePage() {
   return (
     <div className="homepage">
-      <h2>Welcome to Coding Exercise</h2>{" "}
+      <h1>Welcome to Coding Exercise</h1>
     </div>
   );
 }

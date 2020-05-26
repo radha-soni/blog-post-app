@@ -1,5 +1,10 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  NavLink,
+} from "react-router-dom";
 import Post from "./components/Post";
 import "./App.css";
 import HomePage from "./components/HomePage";
@@ -11,10 +16,14 @@ function App() {
       <Router>
         <ul className="links-container">
           <li>
-            <Link to="/Posts">Posts</Link>
+            <NavLink activeClassName="link-active" to="/posts">
+              Posts
+            </NavLink>
           </li>
           <li>
-            <Link to="/new-post">New Post</Link>
+            <NavLink activeClassName="link-active" to="/new-post">
+              New Post
+            </NavLink>
           </li>
         </ul>
         <Switch>
